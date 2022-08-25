@@ -9,10 +9,10 @@ local defaults = {
   mixin: {
     ruleLabels: {},
     _config: {
-      cadvisorSelector: 'job="kubelet", metrics_path="/metrics/cadvisor"',
-      kubeletSelector: 'job="kubelet", metrics_path="/metrics"',
+      cadvisorSelector: 'job="kubernetes-nodes-cadvisor"',
+      kubeletSelector: 'job="kubernetes-nodes"',
       kubeStateMetricsSelector: 'job="kube-state-metrics"',
-      nodeExporterSelector: 'job="node-exporter"',
+      nodeExporterSelector: 'job="kubernetes-node-exporter"',
       kubeSchedulerSelector: 'job="kube-scheduler"',
       kubeControllerManagerSelector: 'job="kube-controller-manager"',
       kubeApiserverSelector: 'job="apiserver"',

@@ -9,7 +9,7 @@ local defaults = {
   mixin: {
     ruleLabels: {},
     _config: {
-      nodeExporterSelector: 'job="node-exporter"',
+      nodeExporterSelector: 'job="kubernetes-node-exporter"',
       hostNetworkInterfaceSelector: 'device!~"veth.+"',
       runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/general/%s',
     },
