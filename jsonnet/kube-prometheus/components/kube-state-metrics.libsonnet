@@ -35,7 +35,7 @@ local defaults = {
     ruleLabels: {},
     _config: {
       kubeStateMetricsSelector: 'job="' + defaults.name + '"',
-      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/kube-state-metrics/%s',
+      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/#%s',
     },
   },
 };

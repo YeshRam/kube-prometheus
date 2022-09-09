@@ -31,7 +31,7 @@ local defaults = {
       prometheusSelector: 'job="prometheus-' + defaults.name + '",namespace="' + defaults.namespace + '"',
       prometheusName: '{{$labels.namespace}}/{{$labels.pod}}',
       thanosSelector: 'job="thanos-sidecar"',
-      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/prometheus/%s',
+      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/#%s',
     },
   },
   thanos: null,

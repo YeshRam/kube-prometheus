@@ -64,7 +64,7 @@ local defaults = {
       alertmanagerName: '{{ $labels.namespace }}/{{ $labels.pod}}',
       alertmanagerClusterLabels: 'namespace,service',
       alertmanagerSelector: 'job="alertmanager-' + defaults.name + '",namespace="' + defaults.namespace + '"',
-      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/alertmanager/%s',
+      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/#%s',
     },
   },
 };

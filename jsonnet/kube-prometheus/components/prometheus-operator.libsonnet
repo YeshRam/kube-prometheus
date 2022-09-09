@@ -31,7 +31,7 @@ local defaults = {
     },
     _config: {
       prometheusOperatorSelector: 'job="prometheus-operator",namespace="' + defaults.namespace + '"',
-      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/prometheus-operator/%s',
+      runbookURLPattern: 'https://runbooks.prometheus-operator.dev/runbooks/#%s',
     },
   },
 };
